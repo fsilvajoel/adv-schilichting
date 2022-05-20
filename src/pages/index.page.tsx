@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Banner from '~components/Banner';
+import FabButton from '~components/FabButton';
 import Footer from '~components/Footer/Footer';
 import Header from '~components/Header/Header';
 // import styles from '../styles/Home.module.css';
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Header links={indicadoHeaderLinks} social={social} />
       <main>
         <Banner />
+        <FabButton />
         <Footer />
       </main>
     </>
