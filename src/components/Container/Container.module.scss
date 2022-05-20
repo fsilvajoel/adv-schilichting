@@ -1,0 +1,34 @@
+.section {
+  width: 100%;
+
+  display: flex;
+
+  font-size: 2rem;
+
+  &.backgroundWhite {
+    background-color: #fff;
+  }
+
+  &.backgroundBlack {
+    background-color: #000000;
+  }
+
+  &.backgroundTransparent {
+    background-color: transparent;
+  }
+
+  &.noPadding {
+    padding: 0;
+  }
+
+  .content {
+    width: 87%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+  }
+
+  .fullWidth {
+    width: 100%;
+  }
+}

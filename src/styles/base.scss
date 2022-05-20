@@ -1,0 +1,26 @@
+@use 'styles/breakpoints' as *;
+html,
+body {
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+  // font-size: 62.5%;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: normal;
+  font-variant: normal;
+
+  scroll-behavior: smooth;
+  * {
+    margin: 0;
+  }
+  main {
+    padding-top: 127px;
+  }
+
+  font-display: swap;
+}
+
+@include from1024 {
+  main {
+    padding-top: 188px;
+  }
+}

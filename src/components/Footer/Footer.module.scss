@@ -1,0 +1,121 @@
+@use 'styles/breakpoints' as *;
+@use 'styles/colors.module' as *;
+
+.container {
+  width: 100%;
+
+  .content {
+    margin: 80px auto 64px;
+
+    .linkWrapper {
+      margin: 45px auto 0;
+
+      .link {
+        color: #000;
+
+        text-align: right;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+
+        margin-bottom: 40px;
+      }
+    }
+
+    .divisor {
+      width: 100%;
+      height: 1px;
+
+      margin: 40px auto 0;
+
+      background-color: #000;
+
+      opacity: 0.5;
+    }
+
+    .underDivisorWrapper {
+      .legalTextWrapper {
+        max-width: 62vw;
+
+        text-align: center;
+
+        margin: 32px auto;
+
+        .legalText {
+          color: #000;
+
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.6rem;
+        }
+      }
+
+      .socialWrapper {
+        display: flex;
+
+        justify-content: space-between;
+
+        .socialButton {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+  }
+}
+
+@include from1024 {
+  .container {
+    .content {
+      .linkWrapper {
+        display: flex;
+
+        .link {
+          font-size: 1.4rem;
+
+          font-weight: 400;
+          line-height: 2.2rem;
+
+          margin-right: 32px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .divisor {
+        margin-bottom: 32px;
+      }
+
+      .underDivisorWrapper {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        .logo {
+          width: 300px;
+        }
+
+        .legalTextWrapper {
+          margin: 0;
+        }
+
+        .socialWrapper {
+          .socialButton {
+            width: 32px;
+            height: 32px;
+
+            margin-right: 24px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/colors.module' as *;
+
+.container {
+  width: 100%;
+  min-height: 110px;
+
+  display: flex;
+
+  padding: 34px 0;
+
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 13;
+
+  background-color: #fff;
+
+  transition: all 0.2s ease-in-out;
+
+  &.scrolled {
+    background-color: transparent;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .menuWrapper {
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    .logo {
+      .icon {
+        width: 209px;
+
+        position: relative;
+      }
+    }
+
+    .contentRight {
+      width: 75%;
+
+      color: red;
+
+      &.desktop {
+        display: none;
+      }
+
+      &.drawer {
+        display: flex;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        .drawerModal {
+          height: auto;
+          min-height: 100%;
+        }
+
+        .iconButton {
+          width: 40px;
+          height: 40px;
+
+          display: inline-flex;
+
+          align-items: center;
+          justify-content: center;
+
+          color: #999;
+
+          border: 0;
+
+          background: none;
+
+          cursor: pointer;
+
+          &:focus {
+            outline: 0;
+          }
+
+          &:hover {
+            color: #666;
+          }
+        }
+      }
+
+      .btnWrapper {
+        display: flex;
+
+        .btnTryItFree {
+          display: none;
+
+          color: #000;
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          text-decoration: none;
+
+          margin: 0 8px 0 21px;
+          padding: 13px 20px;
+          border: 0;
+
+          background: transparent;
+          outline: 0;
+          border-radius: 5px;
+
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.9;
+          }
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include from1024 {
+  .container {
+    &.scrolled {
+      .menuWrapper {
+        .logo {
+          &.hideScroll {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+
+      .link {
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        letter-spacing: 1px;
+
+        margin-right: 32px;
+      }
+    }
+
+    .menuWrapper {
+      .contentRight {
+        &.desktop {
+          display: flex;
+
+          align-items: center;
+          justify-content: flex-end;
+        }
+
+        &.drawer {
+          display: none;
+        }
+      }
+    }
+  }
+}
