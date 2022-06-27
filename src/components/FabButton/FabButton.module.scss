@@ -2,9 +2,14 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
+
+  svg {
+    zoom: 1.5;
+    padding: 8px;
+  }
 }
 
-.fab button {
+.fab a {
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -20,11 +25,11 @@
   transition: 0.2s ease-out;
 }
 
-.fab button:focus {
+.fab a:focus {
   outline: none;
 }
 
-.fab button.main {
+.fab a.main {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -33,8 +38,4 @@
   right: 0;
   bottom: 0;
   z-index: 20;
-}
-
-.fab button.main:before {
-  content: '⏚';
 }

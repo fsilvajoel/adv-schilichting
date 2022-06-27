@@ -1,0 +1,38 @@
+@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/colors.module' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .missionCard {
+    height: 200px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #d7cc7583;
+    // border: 1px solid #d7cc75;
+    border-radius: 5px;
+    .titleCard {
+      color: #5d081d;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 300;
+      padding-bottom: 2rem;
+    }
+    .contentCard {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+}
+
+@include from1024 {
+  .container {
+    flex-direction: row;
+    .missionCard {
+      width: 30%;
+    }
+  }
+}

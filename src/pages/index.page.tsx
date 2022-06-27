@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Atuacao from '~components/Atuacao';
 import Banner from '~components/Banner';
+import Contato from '~components/Contato';
 import FabButton from '~components/FabButton';
 import Footer from '~components/Footer/Footer';
 import Header from '~components/Header/Header';
+import Missao from '~components/Missao';
 // import styles from '../styles/Home.module.css';
 import { indicadoHeaderLinks, social } from './data';
 
@@ -17,6 +20,9 @@ const Home: NextPage = () => {
       <Header links={indicadoHeaderLinks} social={social} />
       <main>
         <Banner />
+        <Atuacao />
+        <Missao />
+        <Contato />
         <FabButton />
         <Footer />
       </main>
