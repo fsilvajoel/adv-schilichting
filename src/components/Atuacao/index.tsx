@@ -1,20 +1,19 @@
 import Container from '~components/Container/Container';
+import Label from '~components/Label';
 import scss from './Atuacao.module.scss';
 
 const Atuacao = () => {
   return (
     <Container id="atuacao" className={scss.container} backgroundColor={'backgroundTransparent'}>
       <div className={scss.heroText}>
-        <h2 className={scss.CallText}>Sobre Nós</h2>
+        <Label title="Sobre Nós" />
         <p className={scss.CallContent}>
-          O escritório de advocacia M.Santos Advogados foi fundado em 1987 com o propósito de trazer
-          a satisfação aos clientes por meio dos serviços jurídicos especializados nas áreas de
-          Direito Civil e de Família, Direito Penal, Direito do Trabalho e Direito Previdenciário.
-          <br />
-          Priorizamos um atendimento humanizado, valorizando e respeitando os clientes, em quaisquer
-          de suas formas de atuação, e primando sempre pela excelência e eficiência na resolução dos
-          problemas de nossos clientes. Buscamos sempre nos adaptar as necessidades de nossos
-          clientes e tratar com ética, responsabilidade e seriedade cada trabalho exercido.
+          Como atuação o escritório tem como pilar a advocacia moderna nas áreas do{' '}
+          <b>Direito Civil</b> e <b>Direito Previdenciário</b>, que visa trazer serviços para os
+          clientes com o objetivo de obter para as pessoas a adoção de procedimentos corretos com a
+          utilização de teses jurídicas sólidas e atualizadas.
+          <br /> Dedicação, empenho, especialização, combatividade e agilidade são a pedra basilar
+          do nosso trabalho permanente.
         </p>
       </div>
     </Container>
