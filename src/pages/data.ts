@@ -1,15 +1,5 @@
 import InstagramSVG from '~components/imagens/instagram.svg';
 import LinkedInSVG from '~components/imagens/linkedin.svg';
-export interface IComoFuncionaStep {
-  title: string;
-  description: string;
-}
-
-export interface IComoFuncionaProps {
-  steps: IComoFuncionaStep[];
-
-  removePaddingBottom?: boolean;
-}
 
 export const indicadoHeaderLinks = [
   {
@@ -27,6 +17,51 @@ export const indicadoHeaderLinks = [
   {
     label: 'Contato',
     to: '#contato',
+  },
+];
+
+export const miassaoData = [
+  {
+    title: 'Missão',
+    content: `Solução de Problemas, \n
+    Máxima Entrega Profissional`,
+  },
+  {
+    title: 'Valores',
+    content: `Ética,\n Dedicação,\n Abordagem Inovadora`,
+  },
+  {
+    title: 'Propósito ',
+    content: `Encantar Clientes\n Segurança Jurídica`,
+  },
+];
+
+export const especialidadesData = [
+  {
+    title: 'Direito Civil',
+    description: 'Especialista em Direito civil',
+  },
+  {
+    title: 'Direito Processual Civil',
+    description: 'Especialista em Direito civil',
+  },
+  {
+    title: 'Direito Previdenciário',
+    description: 'Especialista em Direito civil',
+  },
+];
+export const contatoData = [
+  {
+    contact: 'Endereço',
+    content: 'Júlio de Castilhos, 700. Sala 23',
+  },
+  {
+    contact: 'E-mail',
+    content: 'contato@doutorleonardo.com',
+  },
+  {
+    contact: 'Telefone',
+    content: '(51) 99836-1545',
   },
 ];
 

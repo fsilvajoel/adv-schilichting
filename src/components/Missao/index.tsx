@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '~components/Container/Container';
 import scss from './Missao.module.scss';
+import { miassaoData } from '../../pages/data';
 
 interface IcardProps {
   title: string;
@@ -19,18 +20,9 @@ const Missao = () => {
   return (
     <Container id="missao" backgroundColor={'backgroundTransparent'}>
       <div className={scss.container}>
-        <Card
-          title="Missão"
-          content="lorem ipsum dolor sit amet dolor sit amet, consectetur adipiscing elit"
-        />
-        <Card
-          title="visao"
-          content="lorem ipsum dolor sit amet  amet dolor sit amet, consectetur adipiscing elit"
-        />
-        <Card
-          title="valores"
-          content="lorem ipsum dolor sit  amet dolor sit amet, consectetur adipiscing elit"
-        />
+        {miassaoData.map((mission) => (
+          <Card key={mission.title} title={mission.title} content={mission.content} />
+        ))}
       </div>
     </Container>
   );

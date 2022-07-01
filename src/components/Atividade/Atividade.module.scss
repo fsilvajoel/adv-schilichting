@@ -1,0 +1,52 @@
+@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/colors.module' as *;
+
+.wrapper {
+  height: 10rem;
+  background-color: #f8f9f9;
+  // margin-bottom: 10rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    margin-top: -2rem;
+    left: 23%;
+    margin-left: -50px;
+    position: absolute;
+
+    .missionCard {
+      height: 100px;
+      margin: 0 0.5rem;
+      padding: 2rem;
+      text-align: center;
+      background-color: #fff;
+      border: 0;
+      border-bottom: 2px #d7cc75 solid;
+      box-shadow: 2px 1px 4px 0px;
+
+      .titleCard {
+        color: #5d081d;
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 300;
+        padding-bottom: 2rem;
+        height: 36px;
+      }
+      .contentCard {
+        font-size: 1.2rem;
+        font-weight: 100;
+      }
+    }
+  }
+
+  @include from1024 {
+    .container {
+      flex-direction: row;
+      .missionCard {
+        width: 30%;
+      }
+    }
+  }
+}

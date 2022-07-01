@@ -34,9 +34,9 @@ const Header = (props: IHeaderProps) => {
   const renderLogo = () => (
     <InternalLink to="/" className={scss.logo}>
       {!isDesktop ? (
-        <Image src={Logo} className={scss.logo} alt="Leonardo Shlichting" />
+        <Image src={Logo} className={scss.logo} alt="Leonardo Schlichting" />
       ) : (
-        <Image src={Logo} className={scss.logo} alt="Leonardo Shlichting" />
+        <Image src={Logo} className={scss.logo} alt="Leonardo Schlichting" />
       )}
     </InternalLink>
   );

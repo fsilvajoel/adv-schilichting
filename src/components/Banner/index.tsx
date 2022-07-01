@@ -11,7 +11,7 @@ const Banner = () => {
     >
       <div className={scss.heroText}>
         <h2 className={scss.CallText}>ADVOCACIA COM EXCELÊNCIA E EFICIÊNCIA</h2>
-        <p className={scss.CallContent}>Leonardo Shlichting</p>
+        <p className={scss.CallContent}>Leonardo Schlichting</p>
 
         <button className={scss.button}>Entre em Contato</button>
       </div>
