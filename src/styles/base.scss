@@ -1,9 +1,7 @@
 @use 'styles/breakpoints' as *;
 html,
 body {
-  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
-  // font-size: 62.5%;
-  font-style: normal;
+  font-family: 'Helvetica';
   text-rendering: optimizeLegibility;
   font-feature-settings: normal;
   font-variant: normal;
