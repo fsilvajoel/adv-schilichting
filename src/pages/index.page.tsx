@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Header links={indicadoHeaderLinks} social={social} />
       <main>
         <Banner />
-        <Atividade />
+        {/* <Atividade /> */}
         <Atuacao />
         <Missao />
         <Contato />

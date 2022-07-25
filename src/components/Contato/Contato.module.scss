@@ -1,35 +1,42 @@
+@use 'styles/breakpoints' as *;
 .wrapperContact {
-  padding: 2.5rem;
   text-align: center;
   text-align: -webkit-center;
-}
-.containerContact {
-  display: flex;
-  flex-direction: row;
-}
-.contactAbout {
-  width: 50%;
-  padding: 2rem;
-  .contactAboutTitle {
-    font-weight: 300;
-    color: #5d081d;
+
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+
+    .contactAbout {
+      .contactAboutTitle {
+        font-weight: 300;
+        color: #5d081d;
+      }
+      .contactAboutText {
+        font-weight: 100;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 2rem;
+      }
+    }
+  .contentImage{
+    .wrapperImage{
+      border-bottom: 12px solid #d7cc75;
+      border-left: 8px solid #d7cc75;
+      height: 400px;
+      width: 320px;
+    }
   }
-  .contactAboutText {
-    font-weight: 100;
-    font-size: 1.2rem;
-    text-align: justify;
-    padding: 2rem;
   }
 }
 .contactInfo {
-  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  justify-content: space-between;
   .contato {
     display: flex;
     flex-direction: row;
-    padding: 0 5rem;
     .icon {
       height: 38px;
       width: 38px;
@@ -39,9 +46,35 @@
     .contactText {
       padding: 6px;
       text-align: start;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
+      font-size: 1rem;
+      line-height: 1.4rem;
       margin-bottom: 2rem;
     }
   }
 }
+
+@include from1024 {
+  .wrapperContact{
+    padding: 2.5rem;
+    .containerContact{
+      flex-direction: row;
+      .contactAbout {
+        width: 50%;
+        padding: 2rem;
+    }
+    .contentImage{
+      padding-top: 6rem;
+      .wrapperImage{
+        height: 500px;
+        width: 400px;
+      }
+    }
+    }
+  }
+    .contactInfo {
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    }
+}
+
